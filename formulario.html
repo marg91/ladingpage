@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Contacto</title>
+</head>
+<body class="bodyform">
+    <section>
+    <header>
+        <a href="index.html" class="logo">Mar García</a>
+        <ul class="navbar">
+            <li>
+                <a href="sobremi.html">Quien soy</a>
+            </li>
+            <li>
+                <a href="cv.html">CV</a>
+            </li>
+            <li>
+                <a href="proyectos.html">Proyectos destacados</a>
+            </li>
+            <li><a href="formulario.html">Contacto</a>
+            </li>
+        </ul>
+    </header>
+    <form  name=formulario method="post" action="mailto:garciajuanmar@gmail.com" class="formulario">
+       <fieldset>
+        <legend>Formulario de contacto</legend>
+              <legend>Datos personales</legend>
+              <fieldset>
+         Nombre: <input type="text" name="Nombre" id="" placeholder="Escribe tu nombre" required> Apellidos: <input type="text" name="apellidos" id="" placeholder="Escribe tus apellidos" required>
+         <br>
+         <br>DNI: <input type="text" name="dni" id="" placeholder="XXXXXXXX-A"> Fecha de nacimiento: <input type="date" name="Nacimiento" id=""> 
+         <br>
+         <br>Sexo: <input type="radio" name="sexo">Hombre <input type="radio" name="sexo">Mujer
+        </fieldset>
+        <fieldset>
+        <legend>Datos de contacto:</legend>
+         <br>Teléfono: <input type="telefono" name="telefono" id="" placeholder="Ej: XXXXXXXXX" required width="200px">  E-mail: <input type="email" name="mail" id="" placeholder="Ej: email@google.es" required width="200px"> 
+       </fieldset>
+       <fieldset>
+       <legend>Detalla tu solicutud de información</legend>
+         <textarea name="comentarios" id="area" cols="50" rows="10" minlength="5" maxlength="250" 
+                placeholder="Cuentame lo que necesites. Máximo 250 caracteres."></textarea>
+       </fieldset>
+       
+         <br><input type="submit" value="Enviar formulario">
+         <input type="reset" value="Eliminar">
+         <input type="file" name="" id="" value="Adjuntar Archivos" accept=".pdf, .png, .jpg" multiple>
+        </fieldset>
+        </form>
+        <div class="copyright">
+            <p class="copymi">&copy; Web personal creada para la materia de Lenguaje de marcas del CFGS DAW</p>
+        </div>
+        <ul class="redesSociales">
+            <li>
+                <a href="#">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+  
+</section>
+</body>
+</html>

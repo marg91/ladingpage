@@ -1,0 +1,509 @@
+/*Todos los fondos utilizados son de freepik.con*/
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Indie+Flower&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+;
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background: url(img/20151001_007.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  
+}
+section{
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 50px 0;
+}
+header{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color:azure;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(239, 117, 221);
+    border-radius: 20px;
+    padding: 0 10px;
+    font-family:  "Lora", serif;
+    font-weight: 900;
+}
+header .logo:hover{
+    color:rgb(239, 117, 221);
+    background:rgb(246, 213, 229);
+    transition:1s;
+}
+header .navbar{
+    position:relative;
+    display:flex;
+
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 15px;
+
+}
+header .navbar li a{
+    text-decoration: none;
+    color: rgb(67, 42, 62);
+    font-weight: 600;
+    padding:8px;
+    transition: 0.3s;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font:bolder ;
+}
+header .navbar li a:hover {
+    border-bottom: 5px solid rgb(239, 117, 221);
+    padding: 2px;
+    font-size: 15px;
+}
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+.contenido .tituloBox{
+    position:relative;
+    max-width: 600px;
+    text-align: center;
+}
+.contenido .tituloBox h2{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: rgb(250, 208, 232);
+}
+.contenido .tituloBox h2 span{
+    display:inline-block;
+    white-space: nowrap; /*Para que el texto se mantenga en una sola línea*/
+    background: rgb(239, 117, 221);
+    color:rgb(250, 208, 232);
+    padding: 0 20px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 1.0em;
+}
+.contenido .tituloBox p{
+    font-size: 0.9em;
+    line-height: 1.4;
+    color:rgb(244, 248, 248);
+    font-family: "Lora", serif;
+    font-weight: 900px;
+    margin-bottom: 15px;   
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(239, 117, 221);
+    background: rgb(244, 248, 248) ;
+    padding: 5px 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 0.6em;
+}
+.contenido .tituloBox a:hover{
+    color: rgb(246, 213, 229);
+    transition: 0.5s;
+    background-color: rgb(67, 42, 62);
+}
+    
+.contenido .imgBox {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.contenido .imgBox img {
+    max-width: 55%; 
+    height: auto; 
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.contenido .imgBox img:hover{
+    transform:rotateY(180deg);
+}
+.copyright{
+    position:absolute;
+    bottom:5px;
+    margin-bottom: 10px;
+    padding:1px;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    color:rgb(246, 213, 229);
+    text-align: center;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 9px;
+}
+.redesSociales{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+    list-style:none;
+}
+.redesSociales li{
+    padding:10px;
+}
+.redesSociales li a{
+    color: rgb(67, 42, 62);
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color:rgb(115, 197, 223);
+}
+.general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.FotoPerfil{
+    position:relative;
+    width: 150px;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0px;
+    margin-top:100px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+    overflow: hidden;  /*Lo utilizo apra que el contenido no salga del contenedor*/
+}
+.FotoPerfil img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;/*Para que la foto se ajuste a su contenedor sin perder el aspecto original*/
+    border-radius: 30%;
+    order:-1;  
+}
+.FotoPerfil img:hover{
+    transform:rotateY(180deg);
+    /*hace que rote 180 grados, como que cambie su posicion, mirando hacia el otro lado*/
+}
+.descripcion{ 
+    text-align: center;
+    position:relative;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.descripcion .textoMio {
+    font-family: "Indie Flower", cursive;
+    font-size: 1.0em; 
+    line-height: 1.6; 
+    color: #333; 
+}
+.bodysobremi{
+    background-image: url(img/cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh;
+    font-weight: bolder;
+}
+.copyright .copymi{
+    color:rgb(147, 66, 131)
+}
+.bodyform{
+    background-image: url(img/fondoform.jpg);
+    margin:auto;
+    display: flex;
+    text-align: center;
+}
+form{
+    position: relative;
+    bottom: 12px;
+    margin:auto;
+    margin-top: 50px;
+    padding: 6px;
+    margin-bottom: 20px;  
+}
+legend{
+    font-size: 12px;
+    font-weight: bold;
+    color:rgb(133, 30, 133)
+   }
+fieldset {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 5%;
+    border-radius: 15px;
+    text-align: left;
+    align-items: center;
+    font-size: 10px;
+    padding: 8px;
+}
+input[type="text"],input[type="date"],input[type="email"],input[type="telefono"],textarea {
+    border-radius: 10px;
+    padding: 4px; 
+    border: 1px solid #efa7d0; 
+    margin-bottom: 2px; 
+}
+.bodycv{
+    background-image: url(img/puzzle.jpg);
+    /*Imagen de autoria de freepik.com*/
+}
+.section1{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 50px 0;
+}
+.Datos{
+    display: inline-block; 
+    margin-bottom: 10px;
+    background: hsla(315, 80%, 71%, 0.3);
+    border-radius: 30px;
+    font-family: "Lora", serif;
+    white-space: nowrap; 
+    font-size: 1.0em;
+    padding: 0 20px 20px;
+    transition: all 0.5s; /* Aplico la transición a todas las propiedades de medio segundo*/
+}
+#negrita1{
+    font-weight: bolder;
+    text-align: center;
+}
+#dat{
+    text-align: center;
+    color:rgb(155, 146, 146);
+    text-align: center;
+}
+#negrita{
+    font-weight: bolder;
+}
+.Experiencia{
+    display: block; 
+    margin-bottom: 10px;
+    background:hsla(173, 85%, 72%, 0.3);
+    border-radius: 30px;
+    font-family: "Lora", serif;
+    white-space: nowrap; 
+    font-size: 1.0em;
+    padding: 20px 350px 20px 20px;
+    text-align: left;
+}
+#sombra{
+    color: rgb(129, 11, 111);
+}
+.estudios{
+    display: block; 
+    margin-bottom: 10px;
+    background:hsl(173, 23%, 71%, 0.3);
+    border-radius: 30px;
+    font-family: "Lora", serif;
+    white-space: nowrap; 
+    font-size: 1.0em;
+    padding: 20px 270px 20px 20px;
+    text-align: left;
+}
+.FotoPerfil1{
+    position:relative;
+    width: 150px;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0px;
+    margin-top:100px;
+    transition: transform 0.5s; /*Defino una transición suave*/
+    transform-style: preserve-3d;/*lo he utilizado para que los contenedores secundarios mantengan su posición*/
+    border-radius: 50%;
+    overflow:hidden;/*Con esta propiedad intento controlar que el contenido del contenedor no se salga ni se desborde, es decir,
+    que no pueda extenderse más allá de su cotnenedor*/
+    margin-bottom: 10px;;
+    }
+.FotoPerfil1 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;/*Para que la foto se ajuste a su contenedor sin perder el aspecto original*/
+    border-radius: 50%;     
+    }
+.Datos:hover {
+    transform: rotateY(30deg);/*Para que el eje Y rote 30grados*/ 
+    transition: transform 0.5s ease; 
+    /*Con la propiedad ease, defino una transición más suave durante medio segundo*/
+}
+.estudios:hover{
+    transform: rotateY(30deg); /*Para que el eje Y rote 30grados*/
+    transition: transform 0.5s ease; 
+    /*Con la propiedad ease, defino una transición más suave durante medio segundo*/
+}
+.Experiencia:hover{
+    transform: rotateY(30deg);/*Para que el eje Y rote 30grados*/
+    transition: transform 0.5s ease; 
+    /*Con la propiedad ease, defino una transición más suave durante medio segundo*/
+}
+.bodypro{
+    background-image: url(img/fondopro.jpg);
+}
+
+h1{
+    color:rgb(217, 180, 244);
+    margin:50px auto;
+    display:block;
+    text-align:center;
+    font-size:30px;
+    font-family:cursive;  
+}
+.videos{
+    width: 100%;
+    margin: 0 auto;
+}
+.container:after{
+    content:"";
+    display:block;
+    height: 0px;
+    clear:both;
+}
+.container{
+    width:90%;
+    margin:0 4%;  
+}
+.container div{
+    width: 100%;
+    height: auto;
+    display: inline;
+    float: left;
+    padding: 0px;
+}
+.container div video{
+    margin-top: 70px;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 10px rgb(248, 195, 238);
+    border:5px solid;
+}
+.container div video~span{
+    width:40%;
+    display: block;
+    opacity: 0;
+    padding: 1px 1px;
+    color: rgb(58, 14, 46);
+    background-color: #f0a6da;
+    text-align: center;
+}
+.container div video:hover+span{
+    opacity: 1;
+}
+.container:hover div{
+    opacity: 0.2;
+    transform:scale(0.4);
+    transition: 4s;
+}
+.container:hover div:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*Ajuste para responsive*/
+@media  screen and (max-width:576px){
+  
+    .header{
+        display:absolute;
+        font-size: 5px;
+    }
+    .contenido{
+        display:flex;
+        flex-direction: column;
+        margin-top:40px;
+        position: relative;
+    }
+    .contenido .imgBox{
+        display:flex;
+        position:relative;
+        width: 50%;
+        height: 50%;
+    }
+    .logo{
+        font-size:1px;
+        text-align: center;
+    }
+    .copyright{
+        position:absolute
+      
+    }
+    .redesSociales ion-icon{
+    display:flex;
+    font-size: 13px;
+    margin-bottom:5px;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: -20px;
+ 
+    }
+    .navbar{
+        display:absolute;
+        font-size: 10px;
+
+}
+@media  screen and (min-width:992px){
+   
+    .header{
+        display:absolute;
+        font-size: 5px;
+    }
+    .contenido{
+        margin-top:90px;
+        
+        
+    }
+    .contenido .imgBox {
+        width: 50%; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .contenido .imgBox img {
+        max-width: 55%; 
+        height: auto; 
+    }
+
+    .copyright{
+        position:absolute;
+    
+      
+    }
+    .redesSociales ion-icon{
+    display:flex;
+    font-size: 13px;
+    margin-bottom:5px;
+    flex-direction: column;
+    }
+
+}
+
+}
